@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  text-align: center;
+  background-image: url('peakpx.jpg'); 
+  background-size: cover;
+ background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  width: 100%;
+  color: white;
+}
+.title {
+  background-image: url('c.png'); 
+  padding: 20px;
+  width: 100%;
+  font-size: 25px;
+  color: rgb(93, 105, 26);
+}
+.song-title {
+    display: grid;
+    /* grid-template-rows: repeat(2, 1fr); */
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.song-title a {
+    margin-top: 25px;
+    margin: 0;
+    height: 250px;
+    width: 250px;
+    text-decoration: none;
+     background-image: url('peakpx.jpg'); 
+     background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(226, 226, 226);
+    font-weight: 700;  
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.song-title a:hover {
+   
+    color: white;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+.body-bg {
+  background: linear-gradient(180deg, #2d5363, #203a43, #2c5364);
+
+}
+.song-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    font-size: 20px;
+   
+}
+.song-list a {
+    height: 55px;
+    width: 200px;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-image: url('c.png'); 
+    background-size: cover;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    border: snow 2px solid;
+    color: rgb(114, 129, 27);
+    font-weight: 700;
+    transition: 0.3s;
+    
+ 
+}
+.song-list a:hover {
+    /* background:linear-gradient(180deg,#a82ba2,#028090); */
+    color: rgb(200, 27, 27);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+.song-list {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    padding: 7px;
+ 
+}
+/* .song-title {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 50px;
+    
+} */
+}
