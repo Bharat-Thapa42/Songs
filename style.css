@@ -96,6 +96,7 @@ body {
 
 @media (max-width: 768px) {
 .song-list {
+  margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     justify-content: center;
@@ -109,4 +110,5 @@ body {
     
 } */
 }
+
 
